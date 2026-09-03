@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de boletim escolar para consulta de notas, faltas e situação acadêmica.">
+    <title>Boletim Escolar | 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <div class="marca">
+                <img src="imagens/logo.png" alt="Logo da escola">
+                <div>
+                    <h1>Boletim Escolar</h1>
+                    <p>Sistema de acompanhamento acadêmico</p>
+                </div>
+            </div>
+
+            <nav aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#notas">Notas</a>
+                <a href="#faltas">Faltas</a>
+                <a href="#avisos">Avisos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio" class="container">
+
+        <section class="hero" aria-labelledby="titulo-principal">
+            <div>
+                <span class="tag">ANO LETIVO 2026</span>
+                <h2 id="titulo-principal">Olá, João da Silva! 👋</h2>
+                <p>
+                    Consulte suas notas, frequência e situação acadêmica
+                    de forma rápida e organizada.
+                </p>
+            </div>
+
+            <div class="hero-status">
+                <span>STATUS ACADÊMICO</span>
+                <strong>APROVADO</strong>
+            </div>
+        </section>
+
+        <section class="dados-aluno" aria-labelledby="titulo-aluno">
+            <h2 id="titulo-aluno" class="titulo-secao">Dados do aluno</h2>
+
+            <div class="dados-grid">
+                <article class="info-item">
+                    <span>ALUNO</span>
+                    <strong>João da Silva</strong>
+                </article>
+
+                <article class="info-item">
+                    <span>MATRÍCULA</span>
+                    <strong>20260025</strong>
+                </article>
+
+                <article class="info-item">
+                    <span>TURMA</span>
+                    <strong>2º Ano J</strong>
+                </article>
+
+                <article class="info-item">
+                    <span>CURSO</span>
+                    <strong>Desenvolvimento de Sistemas</strong>
+                </article>
+
+                <article class="info-item">
+                    <span>ANO LETIVO</span>
+                    <strong>2026</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="cards-resumo" aria-label="Resumo acadêmico">
+
+            <article class="card resumo-disciplinas">
+                <span class="card-icone">📚</span>
+                <div>
+                    <span>DISCIPLINAS</span>
+                    <strong id="totalDisciplinas">08</strong>
+                </div>
+            </article>
+
+            <article class="card resumo-media">
+                <span class="card-icone">📊</span>
+                <div>
+                    <span>MÉDIA</span>
+                    <strong id="mediaGeral">8,2</strong>
+                </div>
+            </article>
+
+            <article class="card resumo-frequencia">
+                <span class="card-icone">📅</span>
+                <div>
+                    <span>FREQUÊNCIA</span>
+                    <strong id="frequenciaCard">92%</strong>
+                </div>
+            </article>
+
+            <article class="card resumo-situacao">
+                <span class="card-icone">✅</span>
+                <div>
+                    <span>SITUAÇÃO</span>
+                    <strong id="situacaoCard">APROVADO</strong>
+                </div>
+            </article>
+
+        </section>
+
+        <section id="notas" class="secao-tabela" aria-labelledby="titulo-notas">
+            <div class="titulo-com-acoes">
+                <div>
+                    <span class="tag">DESEMPENHO</span>
+                    <h2 id="titulo-notas" class="titulo-secao">Tabela de Notas</h2>
+                </div>
+            </div>
+
+            <div class="tabela-container">
+                <table>
+                    <caption>Notas do aluno por disciplina e bimestre</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Disciplina</th>
+                            <th>1º Bim.</th>
+                            <th>2º Bim.</th>
+                            <th>3º Bim.</th>
+                            <th>Média</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaNotas">
+                        <tr>
+                            <td>Português</td>
+                            <td>8,0</td>
+                            <td>7,5</td>
+                            <td>9,0</td>
+                            <td>8,2</td>
+                            <td><span class="status aprovado">Aprovado</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Matemática</td>
+                            <td>6,0</td>
+                            <td>7,0</td>
+                            <td>8,0</td>
+                            <td>7,0</td>
+                            <td><span class="status aprovado">Aprovado</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Programação</td>
+                            <td>9,0</td>
+                            <td>8,5</td>
+                            <td>9,5</td>
+                            <td>9,0</td>
+                            <td><span class="status aprovado">Aprovado</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Banco de Dados</td>
+                            <td>8,5</td>
+                            <td>8,0</td>
+                            <td>9,0</td>
+                            <td>8,5</td>
+                            <td><span class="status aprovado">Aprovado</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Redes de Computadores</td>
+                            <td>7,5</td>
+                            <td>8,0</td>
+                            <td>8,5</td>
+                            <td>8,0</td>
+                            <td><span class="status aprovado">Aprovado</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Inglês</td>
+                            <td>7,0</td>
+                            <td>6,5</td>
+                            <td>8,0</td>
+                            <td>7,2</td>
+                            <td><span class="status aprovado">Aprovado</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Projeto Integrador</td>
+                            <td>9,0</td>
+                            <td>9,0</td>
+                            <td>9,5</td>
+                            <td>9,2</td>
+                            <td><span class="status aprovado">Aprovado</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Arquitetura de Computadores</td>
+                            <td>7,5</td>
+                            <td>7,0</td>
+                            <td>8,0</td>
+                            <td>7,5</td>
+                            <td><span class="status aprovado">Aprovado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="acoes" aria-label="Ações do boletim">
+            <button type="button" id="btnNotas" class="btn btn-primary">
+                📊 Consultar Notas
+            </button>
+
+            <button type="button" id="btnFaltas" class="btn btn-secondary">
+                📅 Consultar Faltas
+            </button>
+
+            <button type="button" id="btnMedia" class="btn btn-success">
+                🧮 Calcular Média
+            </button>
+
+            <button type="button" id="btnImprimir" class="btn btn-dark">
+                🖨️ Imprimir Boletim
+            </button>
+
+            <button type="button" id="btnLimpar" class="btn btn-warning">
+                🧹 Limpar
+            </button>
+
+            <button type="button" id="btnVoltar" class="btn btn-outline">
+                ↩️ Voltar
+            </button>
+        </section>
+
+        <div class="layout-principal">
+
+            <section id="formulario" class="formulario-secao" aria-labelledby="titulo-formulario">
+                <div class="formulario-header">
+                    <span class="tag">CONSULTA</span>
+                    <h2 id="titulo-formulario" class="titulo-secao">
+                        Calcular Resultado
+                    </h2>
+                    <p>
+                        Informe as notas abaixo para calcular a média e
+                        verificar a situação do aluno.
+                    </p>
+                </div>
+
+                <form id="formNotas">
+
+                    <div class="form-grid">
+
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Digite o nome"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="matricula">Matrícula</label>
+                            <input
+                                type="text"
+                                id="matricula"
+                                name="matricula"
+                                placeholder="Ex.: 20260025"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo campo-largo">
+                            <label for="disciplina">Disciplina</label>
+                            <select id="disciplina" name="disciplina" required>
+                                <option value="">Selecione uma disciplina</option>
+                                <option>Português</option>
+                                <option>Matemática</option>
+                                <option>Programação</option>
+                                <option>Banco de Dados</option>
+                                <option>Redes de Computadores</option>
+                                <option>Inglês</option>
+                                <option>Projeto Integrador</option>
+                                <option>Arquitetura de Computadores</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="nota1">Nota 1</label>
+                            <input
+                                type="number"
+                                id="nota1"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                placeholder="0 a 10"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="nota2">Nota 2</label>
+                            <input
+                                type="number"
+                                id="nota2"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                placeholder="0 a 10"
+                                required
+                            >
+                        </div>
+
+                        <div class="campo">
+                            <label for="nota3">Nota 3</label>
+                            <input
+                                type="number"
+                                id="nota3"
+                                min="0"
+                                max="10"
+                                step="0.1"
+                                placeholder="0 a 10"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-calcular">
+                        CALCULAR RESULTADO
+                    </button>
+                </form>
+
+                <div id="resultado" class="resultado" aria-live="polite">
+                    <p>Preencha o formulário para visualizar o resultado.</p>
+                </div>
+            </section>
+
+            <aside id="avisos" class="avisos" aria-labelledby="titulo-avisos">
+                <div>
+                    <span class="tag">INFORMAÇÕES</span>
+                    <h2 id="titulo-avisos" class="titulo-secao">
+                        Avisos
+                    </h2>
+                </div>
+
+                <article class="aviso">
+                    <span>📢</span>
+                    <div>
+                        <h3>Resultado das avaliações</h3>
+                        <p>O resultado das avaliações já está disponível.</p>
+                    </div>
+                </article>
+
+                <article class="aviso">
+                    <span>📅</span>
+                    <div>
+                        <h3>Reunião de pais</h3>
+                        <p>A próxima reunião acontecerá no dia 28/08.</p>
+                    </div>
+                </article>
+
+                <article class="aviso">
+                    <span>📚</span>
+                    <div>
+                        <h3>Recuperação</h3>
+                        <p>Consulte o calendário escolar para as datas.</p>
+                    </div>
+                </article>
+            </aside>
+
+        </div>
+
+        <section id="faltas" class="frequencia" aria-labelledby="titulo-frequencia">
+            <div>
+                <span class="tag">FREQUÊNCIA</span>
+                <h2 id="titulo-frequencia" class="titulo-secao">
+                    Controle de Faltas
+                </h2>
+                <p>
+                    Sua frequência atual está dentro do limite adequado.
+                </p>
+            </div>
+
+            <div class="frequencia-dados">
+                <div class="frequencia-numero">92%</div>
+                <div>
+                    <strong>Frequência adequada</strong>
+                    <p>Presença registrada no ano letivo.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 - Boletim Escolar</p>
+            <p>Projeto desenvolvido com HTML5, CSS3 e JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
